@@ -1,4 +1,3 @@
-
 import FoldSection from "@/app/components/FoldSection";
 import ProjectSection from "@/app/components/ProjectSection";
 import InquiryForm from "@/app/components/InquiryForm";
