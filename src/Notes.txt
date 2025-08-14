@@ -1,0 +1,16 @@
+// - Notes: This file contains notes for the project.
+Class Names Prefix: FP
+// - Class Names: All class names should start with 'FP' to indicate they are part of the project.
+// - Example: 'FP-Header'.
+// - Example: 'FP-Header-Nav'.
+// - Example: 'FP-Header-Nav-Item'.
+
+
+//Breakpoints
+// - Breakpoints: The project uses the following breakpoints for responsive design:
+sm: '640px / 40rem',   // Small devices (mobile)
+md: '768px / 48rem',   // Medium devices (tablet)
+lg: '1024px / 64rem',  // Large devices (laptop)
+xl: '1280px / 80rem',  // Extra large devices (desktop)
+2xl: '1536px / 96rem'  // 2x extra large devices (large desktop)
+
