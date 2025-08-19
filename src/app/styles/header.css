@@ -1,0 +1,27 @@
+@layer components {
+    .FP-header {
+        @apply flex items-center justify-between p-4;
+    }
+
+    /*Header Logo*/
+    .FP-header-logoLink {
+        @apply flex items-center justify-center;
+    }
+
+    .FP-header-logo {
+        @apply w-35 h-auto;
+    }
+
+    /*Desktop Nav*/
+    .FP-nav {
+        @apply flex items-center justify-center mx-1;
+    }
+
+    .FP-nav-display {
+        @apply hidden lg:flex;
+    }
+
+    .FP-navList {
+        @apply flex items-center justify-center gap-2 list-none m-0 p-0;
+    }
+}

@@ -28,8 +28,8 @@ export default function FoldSection() {
 
             {/*Fold Image*/}
             <div className='FP-fold-image'>
-                <Image src={ImageBG} alt={'Blue blob that shape the developer photo in a frame'} width={300}  height={50}/>
-                <Image src={ImageProfile} alt={'Photo of Bernard Clarke Smiling, wear a grey hoodie and blue hat with black framed prescription glasses'} width={300}  height={50}/>
+                <Image src={ImageBG} alt={'Blue blob that shape the developer photo in a frame'} width={300}  height={300}/>
+                <Image src={ImageProfile} alt={'Photo of Bernard Clarke Smiling, wear a grey hoodie and blue hat with black framed prescription glasses'} width={200}  height={200}/>
             </div>
 
         </section>

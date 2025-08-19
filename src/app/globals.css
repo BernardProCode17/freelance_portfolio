@@ -1,21 +1,38 @@
-@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+@import "normalize.css";
+@import "./styles/header.css";
+@import "./styles/mobileNav.css";
 
 :root {
-  --background: #F9FAFF;
-  --foreground: #171717;
+    --background: #F9FAFF;
+    --foreground: #171717;
+    --font-playfair: 'Playfair Display', serif;
+    --font-raleway: 'Raleway', sans-serif;
+
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  /*--font-sans: var(--font-geist-sans);*/
-  /*--font-mono: var(--font-geist-mono);*/
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-header: var(--font-playfair);
+    --font-text: var(--font-raleway);
 }
 
+.FP-body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-text), Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-header), serif;
+    margin: 0;
+    padding: 0;
 }

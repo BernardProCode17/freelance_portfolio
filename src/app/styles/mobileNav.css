@@ -1,0 +1,35 @@
+@layer components {
+
+    .FP-mobile-nav-icon {
+        @apply w-10 h-10 cursor-pointer mr-10;
+    }
+
+    /* Default hidden state */
+    .FP-mobile-nav {
+        @apply hidden;
+    }
+
+    /* Visible when menu is open */
+    .FP-mobile-nav-open{
+        @apply flex items-center justify-center w-full;
+    }
+
+    .FP-mobile-navList {
+        @apply flex items-center justify-center w-full gap-3 list-none m-0 p-0 flex-col h-full;
+    }
+    .FP-mobile-nav-close {
+        @apply hidden;
+    }
+
+
+    /*Media query for 1024px or less */
+    @media (max-width: 1024px) {
+        .FP-mobile-nav {
+            display: none;
+        }
+
+        .FP-mobile-nav-open {
+            display: block;
+        }
+    }
+}
