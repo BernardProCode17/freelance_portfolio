@@ -1,5 +1,9 @@
 @layer components {
 
+    .FP-mobile-nav-container {
+        @apply flex items-center justify-center relative w-[35%] h-full;
+    }
+
     .FP-mobile-nav-icon {
         @apply w-10 h-10 cursor-pointer mr-10;
     }
@@ -10,13 +14,18 @@
     }
 
     /* Visible when menu is open */
-    .FP-mobile-nav-open{
-        @apply flex items-center justify-center w-full;
+    .FP-mobile-nav-open {
+        @apply block
     }
 
     .FP-mobile-navList {
-        @apply flex items-center justify-center w-full gap-3 list-none m-0 p-0 flex-col h-full;
+        @apply flex items-center justify-start w-full min-h-full gap-10 list-none m-0 p-0 flex-col h-full;
     }
+
+    .FP-mobile-navItem {
+        @apply text-2xl font-bold text-white cursor-pointer hover:text-blue-500 transition-colors duration-300;
+    }
+
     .FP-mobile-nav-close {
         @apply hidden;
     }
@@ -29,7 +38,7 @@
         }
 
         .FP-mobile-nav-open {
-            display: block;
+            @apply flex items-center justify-center w-[41vw] min-h-[50vh] absolute top-10 bg-blue-300 rounded;
         }
     }
 }

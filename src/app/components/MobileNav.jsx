@@ -13,7 +13,7 @@ export default function MobileNav() {
     };
 
     return (
-        <>
+        <div className="FP-mobile-nav-container">
             <button className="FP-mobile-nav-icon" onClick={toggleMenu}>
                 <IoMenuOutline className="FP-mobile-nav-icon" size={50}/>
             </button>
@@ -24,6 +24,6 @@ export default function MobileNav() {
                     <li className="FP-mobile-navItem"><Link href="/about">About</Link></li>
                 </ul>
             </nav>
-        </>
+        </div>
     );
 }
